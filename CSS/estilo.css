@@ -17,4 +17,24 @@
     border-radius: 15%; 
  }
  
- 
+ img{
+    height: 80px; 
+    animation-name: cambio;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    position: relative;
+    left: 300px;
+ }
+
+ @keyframes cambio {
+     0%{ opacity: 0;}
+     10%{
+        transform: translate(100px);
+     }
+    40% { 
+        transform: scale(3,2) ;
+    }
+    
+    100% { opacity: 1;}
+ }
